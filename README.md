@@ -33,7 +33,7 @@ debug.json
 
 ```go
 import (
-    "github.com/virskor/gin-config"
+    ginc "github.com/virskor/gin-config"
     "fmt"
 )
 
