@@ -10,8 +10,9 @@ Using json for configrations on gin application.
 ### Config file
 
 Save config.json file as debug/release .json file in defined root path.
+We use different json file in different enviroment.
 ``` go
-    configs/app/*.json
+    configs/app/debug.json || release.json
 ```
 Filename is same with your gin.Mode().
 
@@ -49,8 +50,8 @@ func main(){
 ginc.ConfigOptions
 
 ```go
-    type ConfigOptions struct {
-        Key  string //important, grammar would like gson
-        File string
-    }
+type ConfigOptions struct {
+    Key  string //important, grammar would like gson
+    File string
+}
 ```
