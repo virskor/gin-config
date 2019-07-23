@@ -25,7 +25,7 @@ debug.json
         "db": {
             "driver": "mysql",
             "password": "",
-            ....
+            // ...
         }
     }
 ```
